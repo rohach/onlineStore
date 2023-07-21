@@ -1,40 +1,67 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <div className="footer">
       <section className="footer_inner">
-        <div className="first">
-          <h3>Online Store</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio,
-            sunt.
-          </p>
+        <div id="footer">
+          <div className="main-footer">
+            <div className="logoinfo" data-aos="fade-up">
+              <h2>Onlne Store</h2>
+
+              <div className="contact-details">
+                <h1>Contact Us</h1>
+                <li>
+                  <div className="fa fa-phone"></div>
+                  <a href="tel:+9779876543210">+977-9876543210</a>
+                </li>
+                <li>
+                  <div className="fa fa-envelope"></div>
+                  <a href="mailto:example@gmail.com">example@gmail.com</a>
+                </li>
+              </div>
+            </div>
+            <div className="com " data-aos="fade-up">
+              <h1>About</h1>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/products">Products</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="info" data-aos="fade-up">
+              <h1>Social Media</h1>
+              <div className="sociallogos">
+                <div className="logobox">
+                  <Link
+                    to="https://www.facebook.com/rohan.chaulagain.5"
+                    target="_blank"
+                  >
+                    <i className="ri-facebook-circle-fill"></i>
+                  </Link>
+                  <Link to="https://github.com/rohach" target="_blank">
+                    <i className="ri-github-fill"></i>
+                  </Link>
+                  <Link
+                    to="https://www.instagram.com/rohanchaulagain/"
+                    target="_blank"
+                  >
+                    <i className="ri-instagram-fill"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>© Your Copyright 2023 All Rights Reserved</footer>
         </div>
-        <div className="second">
-          <h3>Delivery Time</h3>
-          Sunday - Thursday 10.00am - 11:00pm Friday - Saturday Off day
-        </div>
-        <div className="third">
-          <h3 style={{ marginBottom: '1rem' }}>Contact</h3>
-          Location: Hetauda-7, Makwanpur, Nepal{' '}
-          <b>Phone: +977-9876543210 Email: example@gmail.com</b>
-        </div>
-        <div className="fourth">
-          <h3>Newsletter</h3>
-          <p>Subscribe to our newsletter</p>
-          {/* <div className="newsletter_btn">
-            <input type="text" />
-            <button>Send</button>
-          </div> */}
-        </div>
-      </section>
-      <section className="footer_outer">
-        <div className="footer_copyright">
-          Copyright - 2023. All Rights Reserved.
-        </div>
-        <div className="footer_links">abcd</div>
       </section>
     </div>
   );

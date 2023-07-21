@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
   list-style: none;
 }
 
@@ -43,7 +43,9 @@ h6 {
 a {
   color: unset;
 }
-
+a:hover {
+  color: initial;
+}
 h1,
 h2 {
   font-size: 2.1rem;

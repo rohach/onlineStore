@@ -3,6 +3,7 @@ nav {
   text-align: center;
   height: 100px;
   padding: 2rem 0;
+  background-color: white;
 }
 .logo {
   display: flex;

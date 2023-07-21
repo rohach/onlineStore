@@ -28,7 +28,9 @@ const Nav = () => {
               <span>Online Store</span>
             </label>
           </Link>
-          <li className="nav_links">Home</li>
+          <li className="nav_links">
+            <Link to="/">Home</Link>
+          </li>
           <li className="nav_links">
             <Link to="products">Products</Link>
           </li>
