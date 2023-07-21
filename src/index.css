@@ -1,0 +1,99 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
+/* reset default style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* base style */
+
+body {
+  background: var(-background);
+  font-family: 'Istok Web', sans-serif;
+}
+
+/* Root variables */
+:root {
+  --orange: #e12d18;
+  --background: #fcfcfc;
+  --widthLg: 80%;
+  --widthMd: 90%;
+  --widthSm: 95%;
+  --radius: 7px;
+  --padding: 0.3rem 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'RocknRoll One', sans-serif !important;
+}
+
+a {
+  color: unset;
+}
+
+h1,
+h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #212245;
+}
+
+section {
+  width: var(--widthLg);
+  margin: 0 auto;
+  /* background-color: var(--background); */
+}
+button {
+  border-radius: var(--radius);
+}
+.btn_primary {
+  background-color: var(--orange);
+  color: white;
+  padding: var(--padding);
+  border: 2px solid transparent;
+  font-weight: 500;
+}
+.btn_secondary {
+  background-color: white;
+  color: var(--orange);
+  padding: var(--padding);
+  font-weight: 500;
+  border: 2px solid var(--orange);
+}
+/* Medium */
+@media only screen and (max-width: 948px) {
+  section {
+    width: var(--widthMd);
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small */
+@media only screen and (max-width: 768px) {
+  section {
+    width: var(--widthSm);
+    margin-top: 4rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+}

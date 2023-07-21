@@ -1,0 +1,7 @@
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact > * {
+  flex-basis: 100%;
+}

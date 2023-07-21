@@ -1,0 +1,41 @@
+.reason {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reason > * {
+  flex-basis: 100%;
+}
+.reason_right h2 {
+  margin-bottom: 1rem;
+}
+.reason_right p {
+  margin-top: 1rem;
+}
+.quality {
+  margin: 1rem;
+}
+
+/* Medium */
+@media only screen and (max-width: 948px) {
+  .reason {
+    flex-direction: column;
+    width: var(--widthMd);
+  }
+  .reason_right {
+    margin-top: 1rem;
+    width: var(--widthMd);
+  }
+}
+
+/* Small */
+@media only screen and (max-width: 768px) {
+  .reason {
+    width: var(--widthSm);
+  }
+  .reason_right {
+    margin-top: 1rem;
+    width: var(--widthSm);
+  }
+}
