@@ -8,19 +8,13 @@ import Testimonial from './pages/Testimonial/Testimonial';
 import Reason from './pages/Reason/Reason';
 import Footer from './common/Footer/Footer';
 import RoutesOnlineStore from './pages/Routes/Routes';
-import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
     <BrowserRouter>
       <ChakraProvider theme={theme}>
         <Nav />
-        <Contact />
-        <Home />
         <RoutesOnlineStore />
-        <About />
-        <Reason />
-        <Testimonial />
         <Footer />
       </ChakraProvider>
     </BrowserRouter>

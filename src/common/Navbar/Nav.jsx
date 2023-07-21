@@ -32,7 +32,9 @@ const Nav = () => {
           <li className="nav_links">
             <Link to="products">Products</Link>
           </li>
-          <li className="nav_links">Contact</li>
+          <li className="nav_links">
+            <Link to="contact">Contact</Link>
+          </li>
           <li className="nav_links">
             <i className="ri-shopping-cart-2-fill"></i>
           </li>
