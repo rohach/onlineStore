@@ -39,6 +39,7 @@ const Testimonial = () => {
           <Lottie animationData={happy} />
         </div>
       </div>
+      <hr />
     </section>
   );
 };

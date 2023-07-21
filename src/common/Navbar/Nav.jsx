@@ -19,13 +19,15 @@ const Nav = () => {
   const btnRef = React.useRef();
 
   return (
-    <section>
+    <>
       <nav>
         <ul className="nav_ul">
           <Link to="/" className="logo">
             <label htmlFor="Logo" className="logo">
               <img src={logo} alt="Logo" />
-              <span>Online Store</span>
+              <span>
+                Online <span style={{ color: 'var(--orange)' }}>Store</span>
+              </span>
             </label>
           </Link>
           <li className="nav_links">
@@ -56,24 +58,30 @@ const Nav = () => {
               <DrawerOverlay />
               <DrawerContent>
                 <DrawerCloseButton />
-                <DrawerHeader>Create your account</DrawerHeader>
+                <DrawerHeader>
+                  Online <span style={{ color: 'var(--orange)' }}>Store</span>
+                </DrawerHeader>
 
                 <DrawerBody>
-                  <Input placeholder="Type here..." />
+                  <Button>Home</Button>
                 </DrawerBody>
-
+                <DrawerBody>
+                  <Button>Home</Button>
+                </DrawerBody>
                 <DrawerFooter>
                   <Button variant="outline" mr={3} onClick={onClose}>
-                    Cancel
+                    <i className="ri-shopping-cart-2-fill"></i>
                   </Button>
-                  <Button colorScheme="blue">Save</Button>
+                  <Button>
+                    <i className="ri-user-line" onClick={onClose}></i>
+                  </Button>
                 </DrawerFooter>
               </DrawerContent>
             </Drawer>
           </li>
         </ul>
       </nav>
-    </section>
+    </>
   );
 };
 

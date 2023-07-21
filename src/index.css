@@ -52,7 +52,6 @@ h2 {
   font-weight: 600;
   color: #212245;
 }
-
 section {
   width: var(--widthLg);
   margin: 0 auto;
@@ -60,6 +59,7 @@ section {
 }
 button {
   border-radius: var(--radius);
+  outline: none !important;
 }
 .btn_primary {
   background-color: var(--orange);
@@ -79,6 +79,7 @@ button {
 @media only screen and (max-width: 948px) {
   section {
     width: var(--widthMd);
+    margin-top: 4rem;
   }
 
   h1,

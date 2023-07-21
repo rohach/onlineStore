@@ -20,21 +20,28 @@ const Reason = () => {
             array of top-notch products that cater to every taste and lifestyle.
           </p>
           <div className="quality">
-            <h4>Trendy products </h4>
+            <h6>
+              <i class="ri-check-double-line"></i> Trendy products{' '}
+            </h6>
             <p>
               We update our store regularly so that our customers can find
               products according to their needs.
             </p>
           </div>
           <div className="quality">
-            <h4>Quality support </h4>
+            <h6>
+              <i class="ri-check-double-line"></i> Quality support{' '}
+            </h6>
             <p>
               We ensure that you do not feel difficulty and hence provide 24/7
               customer support.
             </p>
           </div>
           <div className="quality">
-            <h4>Order from any location</h4>
+            <h6>
+              {' '}
+              <i class="ri-check-double-line"></i> Order from any location
+            </h6>
             <p>Our delivery partners will reach out to you on your doorstep.</p>
           </div>
         </div>

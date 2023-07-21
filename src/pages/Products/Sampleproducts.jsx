@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import './products.css';
+import './sampleproducts.css';
 import { Link } from 'react-router-dom';
-import searchIcon from '../../images/search.png';
 
-const Products = () => {
+const Sampleproducts = () => {
   const [product, setPopular] = useState([]);
   const [search, setSearch] = useState('');
-  const [page, setPage] = useState(1);
-
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
@@ -15,44 +12,14 @@ const Products = () => {
         setPopular(json);
       });
   }, []);
-
-  const selectPageHandler = selectedPage => {
-    if (
-      selectedPage >= 1 &&
-      selectedPage <= product.length / 10 &&
-      selectedPage !== page
-    ) {
-      setPage(selectedPage);
-    }
-  };
-
   return (
-    <section>
-      <h2 style={{ marginTop: '4rem' }}>
-        Our <span style={{ color: 'var(--orange)' }}>Products</span>
+    <section className="sampleproducts">
+      <h2>
+        Our Recent <span style={{ color: 'var(--orange)' }}>Products!</span>
       </h2>
-      <div className="search">
-        <div className="searchBar">
-          <input
-            id="searchQueryInput"
-            type="text"
-            name="searchQueryInput"
-            placeholder="Search"
-            onChange={e => setSearch(e.target.value)}
-          />
-          <button
-            id="searchQuerySubmit"
-            type="submit"
-            name="searchQuerySubmit"
-            className="search_png"
-          >
-            <img src={searchIcon} alt="search" />
-          </button>
-        </div>
-      </div>
-      <div className="row">
+      <div className="row" style={{ marginTop: '2rem' }}>
         {product
-          .slice(page * 8 - 8, page * 8)
+          .slice(0, 4)
           .filter(result => {
             return search.toLowerCase() === ''
               ? result
@@ -96,11 +63,11 @@ const Products = () => {
 
                         <div className="widget-49-meeting-action">
                           <Link
-                            to={'/productdetail/' + result.id}
+                            to="/products"
                             href="#"
                             className="btn btn-sm btn-flash-border-primary buy_now btn_primary no_hover"
                           >
-                            Buy Now
+                            Learn More
                           </Link>
                         </div>
                       </div>
@@ -111,37 +78,9 @@ const Products = () => {
             );
           })}
       </div>
-      {/* button */}
-      {product.length > 0 && (
-        <div className="pagination">
-          <span
-            onClick={() => selectPageHandler(page - 1)}
-            className={page > 1 ? '' : 'pagination__disable'}
-          >
-            ◀
-          </span>
-          {[...Array(product.length / 10)].map((_, i) => {
-            return (
-              <span
-                key={i}
-                className={page === i + 1 ? 'pagination__selected' : ''}
-                onClick={() => selectPageHandler(i + 1)}
-              >
-                {i + 1}
-              </span>
-            );
-          })}
-
-          <span
-            onClick={() => selectPageHandler(page + 1)}
-            className={page < product.length / 10 ? '' : 'pagination__disable'}
-          >
-            ▶
-          </span>
-        </div>
-      )}
+      <hr />
     </section>
   );
 };
 
-export default Products;
+export default Sampleproducts;

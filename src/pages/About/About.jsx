@@ -47,6 +47,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <hr />
     </section>
   );
 };

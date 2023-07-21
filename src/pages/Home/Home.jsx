@@ -6,7 +6,7 @@ import delivery from '../../animations/delivery.json';
 import About from '../About/About';
 import Reason from '../Reason/Reason';
 import Testimonial from '../Testimonial/Testimonial';
-import Products from '../Products/Products';
+import Sampleproducts from '../Products/Sampleproducts';
 
 const Home = () => {
   return (
@@ -41,9 +41,10 @@ const Home = () => {
             <Lottie animationData={delivery} />
           </div>
         </div>
+        <hr />
       </section>
       <About />
-      <Products />
+      <Sampleproducts />
       <Reason />
       <Testimonial />
     </>
