@@ -63,11 +63,19 @@ const Nav = () => {
                 </DrawerHeader>
 
                 <DrawerBody>
-                  <Button>Home</Button>
+                  <Button>
+                    <Link to="/">Home</Link>
+                  </Button>
+                  <br /> <br />
+                  <Button>
+                    <Link to="/products">Products</Link>
+                  </Button>
+                  <br /> <br />
+                  <Button>
+                    <Link to="/contact">Contact</Link>
+                  </Button>
                 </DrawerBody>
-                <DrawerBody>
-                  <Button>Home</Button>
-                </DrawerBody>
+
                 <DrawerFooter>
                   <Button variant="outline" mr={3} onClick={onClose}>
                     <i className="ri-shopping-cart-2-fill"></i>
