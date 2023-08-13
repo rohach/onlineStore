@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/rohach/onlineStore/static/css/main.9ac7f794.css",
+    "main.js": "/rohach/onlineStore/static/js/main.814fcdd0.js",
+    "static/media/home.png": "/rohach/onlineStore/static/media/home.f118b2abcf37eeb5f7cd.png",
+    "static/media/secure.png": "/rohach/onlineStore/static/media/secure.2bcad9eb591cca352b3b.png",
+    "static/media/support.png": "/rohach/onlineStore/static/media/support.b6b71c485e50253b8a7b.png",
+    "static/media/fast.png": "/rohach/onlineStore/static/media/fast.2b25f78f86292f23d75b.png",
+    "index.html": "/rohach/onlineStore/index.html",
+    "main.9ac7f794.css.map": "/rohach/onlineStore/static/css/main.9ac7f794.css.map",
+    "main.814fcdd0.js.map": "/rohach/onlineStore/static/js/main.814fcdd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ac7f794.css",
+    "static/js/main.814fcdd0.js"
+  ]
+}
